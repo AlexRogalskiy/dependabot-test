@@ -2,10 +2,10 @@ FROM ubuntu@sha256:028d7303257c7f36c721b40099bf5004a41f666a54c0896d5f229f1c0fd99
 
 FROM ubuntu:latest@sha256:028d7303257c7f36c721b40099bf5004a41f666a54c0896d5f229f1c0fd99993 AS test-latest-sha
 
-FROM ubuntu:focal@sha256:028d7303257c7f36c721b40099bf5004a41f666a54c0896d5f229f1c0fd99993 AS test-focal-sha
+FROM ubuntu:resolute@sha256:88a381d5b5eeb2b35d3ad70925a362c37ce569daf43ede89ff818ec20e4d3794 AS test-focal-sha
 
-FROM ubuntu:bionic AS test-bionic
+FROM ubuntu:resolute AS test-bionic
 
-FROM ubuntu:bionic@sha256:b88f8848e9a1a4e4558ba7cfc4acc5879e1d0e7ac06401409062ad2627e6fb58 AS test-bionic-sha
+FROM ubuntu:resolute@sha256:3595d7fc4286a33fad0fd853a4063e654287a9c3787437d7937c94ca3f7a804e AS test-bionic-sha
 
-FROM ubuntu:bionic@sha256:028d7303257c7f36c721b40099bf5004a41f666a54c0896d5f229f1c0fd99993 AS test-bionic-with-focal-sha
+FROM ubuntu:resolute@sha256:88a381d5b5eeb2b35d3ad70925a362c37ce569daf43ede89ff818ec20e4d3794 AS test-bionic-with-focal-sha
